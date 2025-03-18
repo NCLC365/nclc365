@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  images: {
-    domains: ['your-image-hosting.com'], // Replace with actual domains if needed
-  },
   experimental: {
-    appDir: true,
+    // Remove 'appDir' if you're not using the new app directory
+  },
+  compiler: {
+    styledComponents: true, // If using styled-components
   },
 };
 
