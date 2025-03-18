@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  trailingSlash: true,  // Ensures all routes work properly
+  swcMinify: true,
   images: {
-    unoptimized: true, // Prevents image build errors on Netlify
+    domains: ['your-image-hosting.com'], // Replace with actual domains if needed
+  },
+  experimental: {
+    appDir: true,
   },
 };
 
