@@ -1,7 +1,16 @@
 import "../styles/globals.css";
+import Layout from "../components/Layout";
+import { useEffect } from "react";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    // Smooth scrolling for a better user experience
+    document.documentElement.classList.add("scroll-smooth");
+  }, []);
+
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
-
-export default MyApp;

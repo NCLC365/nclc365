@@ -1,7 +1,60 @@
+/* filepath: d:\Git projects\nclc365\styles\globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+/* Global Styles */
 body {
-  @apply bg-gray-100 text-gray-900;
+  @apply bg-gray-50 text-gray-900 font-sans antialiased;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+  @apply fixed top-0 left-0 w-full bg-white shadow-md z-50 px-6 py-4 flex justify-between items-center;
+}
+
+/* Button Styling */
+.btn-primary {
+  @apply bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md font-semibold hover:bg-blue-700 transition;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 px-6 py-2 rounded-lg shadow-md font-semibold hover:bg-gray-300 transition;
+}
+
+/* Section Styling */
+.section {
+  @apply py-20 px-6 text-center;
+}
+
+.section-title {
+  @apply text-4xl font-bold mb-6;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 max-w-2xl mx-auto;
+}
+
+/* Card Styling */
+.card {
+  @apply bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition;
+}
+
+.card-title {
+  @apply text-2xl font-semibold text-blue-800;
+}
+
+.card-text {
+  @apply text-gray-700 mt-3;
+}
+
+/* Footer Styling */
+.footer {
+  @apply bg-gray-900 text-white py-6 text-center;
 }
