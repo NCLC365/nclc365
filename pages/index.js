@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -17,14 +18,12 @@ export default function Home() {
           Explore 365 hand-picked No Code & Low Code tools to simplify your workflow.
         </p>
 
-        <a href="#" className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700">
-          Get Started
+        <a href="/tools" className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700">
+          Explore Tools
         </a>
       </main>
 
-      <footer className="w-full p-4 text-center bg-gray-200 text-gray-700">
-        &copy; {new Date().getFullYear()} NCLC365. All rights reserved.
-      </footer>
+      <Footer />
     </div>
   );
 }
