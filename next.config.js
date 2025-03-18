@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   output: "export",
-  experimental: {},
   compiler: {
     styledComponents: true
   }
