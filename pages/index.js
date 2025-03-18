@@ -1,16 +1,15 @@
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-900">
+    <div className="flex flex-col min-h-screen bg-gray-100 text-gray-900">
       <Head>
         <title>NCLC365 - No Code, Low Code Resources</title>
         <meta name="description" content="Discover 365 No Code & Low Code tools to simplify your work and life." />
       </Head>
 
-      <header className="w-full p-4 bg-blue-600 text-white text-center text-xl font-bold">
-        NCLC365 - No Code & Low Code Tools
-      </header>
+      <Navbar />
 
       <main className="flex flex-col items-center justify-center flex-1 w-full p-6">
         <h1 className="text-3xl font-bold">Welcome to NCLC365</h1>
